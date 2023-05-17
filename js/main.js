@@ -2,36 +2,41 @@
 let productsJSON = ` [
     {
         "id":10,
-        "name":"vaz1",
-        "price": 123,
+        "name":"Пельмени",
+        "category":"Горячее",
+        "price": 150,
         "img":"img/1.jpg",
         "isFav": false
     }, 
     {
         "id":25,
-        "name":"vaz2",
+        "name":"Жаркое",
+        "category":"Горячее",
         "price": 150,
         "img":"img/2.jpg",
         "isFav": false
     }, 
     {
         "id":34,
-        "name":"uaz",
-        "price": 340,
+        "name":"Лагман",
+        "category":"Горячее",
+        "price": 300,
         "img":"img/3.jpg",
         "isFav": false
     }, 
     {
         "id":13,
-        "name":"gaz",
+        "name":"Хычины",
+        "category":"Горячее",
         "price": 90,
         "img":"img/4.jpg",
         "isFav": false
     }, 
     {
         "id":45,
-        "name":"paz",
-        "price": 780,
+        "name":"Борщ",
+        "category":"Горячее",
+        "price": 190,
         "img":"img/5.jpg",
         "isFav": false
     }
@@ -59,6 +64,7 @@ const render = (container, mass)=>{
     let textBtn;
     newProduct.innerHTML = `<img src="${item.img}" alt="${item.name}">
     <p class="name">${item.name}</p>
+    <p class="category">${item.category}</p>
     <p class="price">${item.price} &#8381; </p>
     `; 
     
